@@ -69,6 +69,8 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         shader->use();
+        float offset = 0.3f;
+        shader->setFloat("hOffset", offset);
 
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);

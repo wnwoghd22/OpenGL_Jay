@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Shader">
+      <UniqueIdentifier>{53828b2a-36f8-4ecd-9e60-6cad5c512330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader">
+      <UniqueIdentifier>{c6f4fa5e-333d-4361-88ab-f3e21ac05177}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\wnwog\Downloads\src\glad.c">
@@ -24,5 +30,26 @@
     <ClCompile Include="shader.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Constructor.cpp">
+      <Filter>소스 파일\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="definition.cpp">
+      <Filter>소스 파일\Shader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
   </ItemGroup>
 </Project>

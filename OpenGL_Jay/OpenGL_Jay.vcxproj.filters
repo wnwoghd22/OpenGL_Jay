@@ -19,15 +19,12 @@
     <Filter Include="리소스 파일\Shader">
       <UniqueIdentifier>{c6f4fa5e-333d-4361-88ab-f3e21ac05177}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter">
+      <UniqueIdentifier>{345dd2b4-7ce5-40b1-bee3-15cf36e7e6bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\wnwog\Downloads\src\glad.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="hello.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="shader.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Constructor.cpp">
@@ -36,9 +33,21 @@
     <ClCompile Include="definition.cpp">
       <Filter>소스 파일\Shader</Filter>
     </ClCompile>
+    <ClCompile Include="hello.cpp">
+      <Filter>소스 파일\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>소스 파일\Chapter</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>소스 파일\Chapter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

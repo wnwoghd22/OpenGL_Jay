@@ -45,6 +45,9 @@
     <ClCompile Include="..\..\glad\src\glad.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="coordinate.cpp">
+      <Filter>소스 파일\Chapter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">

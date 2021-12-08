@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Chapter">
       <UniqueIdentifier>{345dd2b4-7ce5-40b1-bee3-15cf36e7e6bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\Getting_Started">
+      <UniqueIdentifier>{8397ab8e-962c-4ccd-908b-bb1f9324febd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Constructor.cpp">
@@ -30,26 +33,26 @@
     <ClCompile Include="definition.cpp">
       <Filter>소스 파일\Shader</Filter>
     </ClCompile>
-    <ClCompile Include="hello.cpp">
-      <Filter>소스 파일\Chapter</Filter>
-    </ClCompile>
-    <ClCompile Include="shader.cpp">
-      <Filter>소스 파일\Chapter</Filter>
-    </ClCompile>
-    <ClCompile Include="texture.cpp">
-      <Filter>소스 파일\Chapter</Filter>
-    </ClCompile>
-    <ClCompile Include="transformations.cpp">
-      <Filter>소스 파일\Chapter</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\glad\src\glad.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="coordinate.cpp">
-      <Filter>소스 파일\Chapter</Filter>
-    </ClCompile>
     <ClCompile Include="camera.cpp">
-      <Filter>소스 파일\Chapter</Filter>
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
+    </ClCompile>
+    <ClCompile Include="coordinate.cpp">
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
+    </ClCompile>
+    <ClCompile Include="hello.cpp">
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
+    </ClCompile>
+    <ClCompile Include="transformations.cpp">
+      <Filter>소스 파일\Chapter\Getting_Started</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +60,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="stb_image.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

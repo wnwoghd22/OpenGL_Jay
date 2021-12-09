@@ -80,18 +80,8 @@ public:
         if (direction == RIGHT)
             Position += Right * velocity;
 
-        //q1. fps movement
-        /*if (direction == FORWARD)
-            Position += glm::vec3(Front.x, 0.0f, Front.z) * velocity;
-        if (direction == BACKWARD)
-            Position -= glm::vec3(Front.x, 0.0f, Front.z) * velocity;
-        if (direction == LEFT)
-            Position -= glm::vec3(Right.x, 0.0f, Right.z) * velocity;
-        if (direction == RIGHT)
-            Position += glm::vec3(Right.x, 0.0f, Right.z) * velocity;*/
-
         // make sure the user stays at the ground level
-        Position.y = 0.0f; // <-- this one-liner keeps the user at the ground level (xz plane)
+        //Position.y = 0.0f; // <-- this one-liner keeps the user at the ground level (xz plane)
     }
 
     // processes input received from a mouse input system. Expects the offset value in both the x and y direction.

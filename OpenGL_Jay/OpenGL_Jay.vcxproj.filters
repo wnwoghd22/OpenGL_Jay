@@ -25,6 +25,12 @@
     <Filter Include="소스 파일\Chapter\Getting_Started">
       <UniqueIdentifier>{8397ab8e-962c-4ccd-908b-bb1f9324febd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\Lighting">
+      <UniqueIdentifier>{94b90f3e-d98c-40db-8beb-741587117fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader\Light_Source">
+      <UniqueIdentifier>{c4c4d479-1aa6-4ff4-bd6f-bfa8b76d309f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Constructor.cpp">
@@ -54,6 +60,9 @@
     <ClCompile Include="transformations.cpp">
       <Filter>소스 파일\Chapter\Getting_Started</Filter>
     </ClCompile>
+    <ClCompile Include="colors.cpp">
+      <Filter>소스 파일\Chapter\Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -70,10 +79,16 @@
     <None Include="shader.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="lightShader.vs">
+      <Filter>리소스 파일\Shader\Light_Source</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
       <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="lightFs.txt">
+      <Filter>리소스 파일\Shader\Light_Source</Filter>
     </Text>
   </ItemGroup>
 </Project>

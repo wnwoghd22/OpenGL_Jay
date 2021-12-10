@@ -66,6 +66,9 @@
     <ClCompile Include="basic_lighting.cpp">
       <Filter>소스 파일\Chapter\Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="Materials.cpp">
+      <Filter>소스 파일\Chapter\Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">

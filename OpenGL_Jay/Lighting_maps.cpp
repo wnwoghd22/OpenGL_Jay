@@ -167,7 +167,6 @@ int main()
         lightingShader.setInt("material.diffuse", 0);
         lightingShader.setInt("material.specular", 1);
 
-
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
         glActiveTexture(GL_TEXTURE1);
@@ -176,6 +175,7 @@ int main()
         lightingShader.setInt("material.emission", 2);
         glActiveTexture(GL_TEXTURE2);
         glBindTexture(GL_TEXTURE_2D, EmissionMap);
+        lightingShader.setFloat("time", glfwGetTime());
 
         glm::vec3 lightColor = glm::vec3(1.0f);
         //lightColor.x = sin(glfwGetTime() * 2.0f);

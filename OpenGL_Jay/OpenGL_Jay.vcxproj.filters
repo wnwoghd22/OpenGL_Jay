@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\Class\Mesh">
       <UniqueIdentifier>{c3e26e67-4a42-48c3-864a-6fa69e3405fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class\Model">
+      <UniqueIdentifier>{6723f0fe-6d36-4c8d-85f5-6bac7980a33a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -90,6 +93,12 @@
     <ClCompile Include="Mesh_Definition.cpp">
       <Filter>소스 파일\Class\Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="Model_Definition.cpp">
+      <Filter>소스 파일\Class\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>소스 파일\Chapter\Model_Loading</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -102,6 +111,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="mesh.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -119,6 +131,9 @@
     </Text>
     <Text Include="lightFs.txt">
       <Filter>리소스 파일\Shader\Light_Source</Filter>
+    </Text>
+    <Text Include="fs_model_loading.txt">
+      <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>
 </Project>

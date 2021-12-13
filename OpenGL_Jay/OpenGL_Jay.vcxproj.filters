@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Shader">
-      <UniqueIdentifier>{53828b2a-36f8-4ecd-9e60-6cad5c512330}</UniqueIdentifier>
-    </Filter>
     <Filter Include="리소스 파일\Shader">
       <UniqueIdentifier>{c6f4fa5e-333d-4361-88ab-f3e21ac05177}</UniqueIdentifier>
     </Filter>
@@ -31,14 +28,20 @@
     <Filter Include="리소스 파일\Shader\Light_Source">
       <UniqueIdentifier>{c4c4d479-1aa6-4ff4-bd6f-bfa8b76d309f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\Model_Loading">
+      <UniqueIdentifier>{1186af7b-1ddc-4441-875b-91b8bf3f05a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class">
+      <UniqueIdentifier>{b7be6910-0b18-47fc-bc1f-2d7a0e5092ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\Shader">
+      <UniqueIdentifier>{53828b2a-36f8-4ecd-9e60-6cad5c512330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\Mesh">
+      <UniqueIdentifier>{c3e26e67-4a42-48c3-864a-6fa69e3405fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Constructor.cpp">
-      <Filter>소스 파일\Shader</Filter>
-    </ClCompile>
-    <ClCompile Include="definition.cpp">
-      <Filter>소스 파일\Shader</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\glad\src\glad.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -75,6 +78,18 @@
     <ClCompile Include="Light_casters.cpp">
       <Filter>소스 파일\Chapter\Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="Getting Started.cpp">
+      <Filter>소스 파일\Chapter\Model_Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader_Constructor.cpp">
+      <Filter>소스 파일\Class\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader_Definition.cpp">
+      <Filter>소스 파일\Class\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh_Definition.cpp">
+      <Filter>소스 파일\Class\Mesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -84,6 +99,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="camera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

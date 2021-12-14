@@ -152,8 +152,11 @@
     <ClCompile Include="colors.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="depth_testing.cpp" />
     <ClCompile Include="Mesh_Definition.cpp" />
-    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Model.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Model_Definition.cpp" />
     <ClCompile Include="Shader_Constructor.cpp" />
     <ClCompile Include="coordinate.cpp">
@@ -193,11 +196,13 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="depth_testing.vs" />
     <None Include="lightShader.vs" />
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt" />
+    <Text Include="fs_depth_testing.txt" />
     <Text Include="fs_model_loading.txt" />
     <Text Include="lightFs.txt" />
   </ItemGroup>

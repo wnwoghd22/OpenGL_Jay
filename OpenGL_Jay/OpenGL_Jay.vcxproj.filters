@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\Class\Model">
       <UniqueIdentifier>{6723f0fe-6d36-4c8d-85f5-6bac7980a33a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\Advanced_OpenGL">
+      <UniqueIdentifier>{4758e4aa-2a04-4682-a8a7-af5b4e107ff1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -96,6 +99,9 @@
     <ClCompile Include="Model_Definition.cpp">
       <Filter>소스 파일\Class\Model</Filter>
     </ClCompile>
+    <ClCompile Include="depth_testing.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="Model.cpp">
       <Filter>소스 파일\Chapter\Model_Loading</Filter>
     </ClCompile>
@@ -124,6 +130,9 @@
     <None Include="lightShader.vs">
       <Filter>리소스 파일\Shader\Light_Source</Filter>
     </None>
+    <None Include="depth_testing.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -133,6 +142,9 @@
       <Filter>리소스 파일\Shader\Light_Source</Filter>
     </Text>
     <Text Include="fs_model_loading.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="fs_depth_testing.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

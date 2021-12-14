@@ -105,6 +105,9 @@
     <ClCompile Include="Model.cpp">
       <Filter>소스 파일\Chapter\Model_Loading</Filter>
     </ClCompile>
+    <ClCompile Include="stencil_testing.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -145,6 +148,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="fs_depth_testing.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="fs_border.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

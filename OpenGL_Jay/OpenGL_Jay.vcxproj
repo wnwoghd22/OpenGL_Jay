@@ -152,7 +152,9 @@
     <ClCompile Include="colors.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="depth_testing.cpp" />
+    <ClCompile Include="depth_testing.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -181,6 +183,7 @@
     <ClCompile Include="shader.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="stencil_testing.cpp" />
     <ClCompile Include="texture.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -202,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt" />
+    <Text Include="fs_border.txt" />
     <Text Include="fs_depth_testing.txt" />
     <Text Include="fs_model_loading.txt" />
     <Text Include="lightFs.txt" />

@@ -146,6 +146,7 @@
     <ClCompile Include="basic_lighting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="blending.cpp" />
     <ClCompile Include="camera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -183,7 +184,9 @@
     <ClCompile Include="shader.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="stencil_testing.cpp" />
+    <ClCompile Include="stencil_testing.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="texture.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -205,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt" />
+    <Text Include="fs_blending.txt" />
     <Text Include="fs_border.txt" />
     <Text Include="fs_depth_testing.txt" />
     <Text Include="fs_model_loading.txt" />

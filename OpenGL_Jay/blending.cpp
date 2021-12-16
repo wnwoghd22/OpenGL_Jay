@@ -11,6 +11,7 @@
 #include "model.h"
 
 #include <iostream>
+#include <map>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -75,6 +76,8 @@ int main()
     glEnable(GL_DEPTH_TEST);
     //glDepthFunc(GL_ALWAYS); // always pass the depth test (same effect as glDisable(GL_DEPTH_TEST))
     glDepthFunc(GL_LESS);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     // build and compile shaders
     // -------------------------
@@ -138,12 +141,19 @@ int main()
          5.0f, -0.5f, -5.0f,  2.0f, 2.0f
     };
 
-    vector<glm::vec3> vegetation;
+    /*vector<glm::vec3> vegetation;
     vegetation.push_back(glm::vec3(-1.5f, 0.0f, -0.48f));
     vegetation.push_back(glm::vec3(1.5f, 0.0f, 0.51f));
     vegetation.push_back(glm::vec3(0.0f, 0.0f, 0.7f));
     vegetation.push_back(glm::vec3(-0.3f, 0.0f, -2.3f));
-    vegetation.push_back(glm::vec3(0.5f, 0.0f, -0.6f));
+    vegetation.push_back(glm::vec3(0.5f, 0.0f, -0.6f));*/
+
+    vector<glm::vec3> windows;
+    windows.push_back(glm::vec3(-1.5f, 0.0f, -0.48f));
+    windows.push_back(glm::vec3(1.5f, 0.0f, 0.51f));
+    windows.push_back(glm::vec3(0.0f, 0.0f, 0.7f));
+    windows.push_back(glm::vec3(-0.3f, 0.0f, -2.3f));
+    windows.push_back(glm::vec3(0.5f, 0.0f, -0.6f));
 
 
     // cube VAO
@@ -190,6 +200,7 @@ int main()
     stbi_set_flip_vertically_on_load(true);
     unsigned int grassTexture = loadTexture("textures/grass.png");
     stbi_set_flip_vertically_on_load(false);
+    unsigned int glassTexture = loadTexture("textures/blending_transparent_window.png");
 
     // shader configuration
     // --------------------
@@ -242,14 +253,28 @@ int main()
         // vegetation
         grassShader.use();
         glBindVertexArray(vegetationVAO);
-        glBindTexture(GL_TEXTURE_2D, grassTexture);
+        //glBindTexture(GL_TEXTURE_2D, grassTexture);
+        glBindTexture(GL_TEXTURE_2D, glassTexture);
         grassShader.setMat4("view", view);
         grassShader.setMat4("projection", projection);
-        for (unsigned int i = 0; i < vegetation.size(); i++)
+        /*for (unsigned int i = 0; i < vegetation.size(); i++)
         {
             model = glm::mat4(1.0f);
             model = glm::translate(model, vegetation[i]);
             grassShader.setMat4("model", model);
+            glDrawArrays(GL_TRIANGLES, 0, 6);
+        }*/
+        std::map<float, glm::vec3> sorted;
+        for (unsigned int i = 0; i < windows.size(); i++)
+        {
+            float distance = glm::length(camera.Position - windows[i]);
+            sorted[distance] = windows[i];
+        }
+        for (std::map<float, glm::vec3>::reverse_iterator it = sorted.rbegin(); it != sorted.rend(); ++it)
+        {
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, it->second);
+            shader.setMat4("model", model);
             glDrawArrays(GL_TRIANGLES, 0, 6);
         }
 
@@ -346,8 +371,8 @@ unsigned int loadTexture(char const* path)
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
 
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT); // for this tutorial: use GL_CLAMP_TO_EDGE to prevent semi-transparent borders. Due to interpolation it takes texels from next repeat 
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 

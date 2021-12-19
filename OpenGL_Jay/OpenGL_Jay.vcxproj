@@ -219,6 +219,7 @@
     <Text Include="fs_border.txt" />
     <Text Include="fs_depth_testing.txt" />
     <Text Include="fs_framebuffer.txt" />
+    <Text Include="fs_framebuffer_kernel.txt" />
     <Text Include="fs_model_loading.txt" />
     <Text Include="lightFs.txt" />
   </ItemGroup>

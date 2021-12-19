@@ -171,5 +171,8 @@
     <Text Include="fs_framebuffer.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
+    <Text Include="fs_framebuffer_kernel.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
   </ItemGroup>
 </Project>

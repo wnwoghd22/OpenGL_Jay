@@ -145,6 +145,9 @@
     <None Include="depth_testing.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="framebuffer.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -163,6 +166,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="fs_blending.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="fs_framebuffer.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

@@ -209,6 +209,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="depth_testing.vs" />
+    <None Include="framebuffer.vs" />
     <None Include="lightShader.vs" />
     <None Include="shader.vs" />
   </ItemGroup>
@@ -217,6 +218,7 @@
     <Text Include="fs_blending.txt" />
     <Text Include="fs_border.txt" />
     <Text Include="fs_depth_testing.txt" />
+    <Text Include="fs_framebuffer.txt" />
     <Text Include="fs_model_loading.txt" />
     <Text Include="lightFs.txt" />
   </ItemGroup>

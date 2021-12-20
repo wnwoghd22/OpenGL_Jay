@@ -154,6 +154,9 @@
     <None Include="skybox.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="reflection.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -181,6 +184,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="fs_skybox.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="fs_reflection.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

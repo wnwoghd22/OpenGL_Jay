@@ -117,6 +117,9 @@
     <ClCompile Include="frame_buffers.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="Cubemaps.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -148,6 +151,9 @@
     <None Include="framebuffer.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="skybox.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -172,6 +178,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="fs_framebuffer_kernel.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="fs_skybox.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

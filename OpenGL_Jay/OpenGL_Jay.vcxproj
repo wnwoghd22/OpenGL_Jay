@@ -155,13 +155,16 @@
     <ClCompile Include="colors.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Cubemaps.cpp" />
     <ClCompile Include="depth_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="face_culling.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="frame_buffers.cpp" />
+    <ClCompile Include="frame_buffers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -212,6 +215,7 @@
     <None Include="framebuffer.vs" />
     <None Include="lightShader.vs" />
     <None Include="shader.vs" />
+    <None Include="skybox.vs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt" />
@@ -221,6 +225,7 @@
     <Text Include="fs_framebuffer.txt" />
     <Text Include="fs_framebuffer_kernel.txt" />
     <Text Include="fs_model_loading.txt" />
+    <Text Include="fs_skybox.txt" />
     <Text Include="lightFs.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

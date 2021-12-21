@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c" />
+    <ClCompile Include="AdvancedGLSL.cpp" />
     <ClCompile Include="basic_lighting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -155,7 +156,9 @@
     <ClCompile Include="colors.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Cubemaps.cpp" />
+    <ClCompile Include="Cubemaps.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="depth_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -214,6 +217,7 @@
     <None Include="depth_testing.vs" />
     <None Include="framebuffer.vs" />
     <None Include="lightShader.vs" />
+    <None Include="pointSize.vs" />
     <None Include="reflection.vs" />
     <None Include="shader.vs" />
     <None Include="skybox.vs" />
@@ -223,6 +227,7 @@
     <Text Include="fs_blending.txt" />
     <Text Include="fs_border.txt" />
     <Text Include="fs_depth_testing.txt" />
+    <Text Include="fs_FragCoord.txt" />
     <Text Include="fs_framebuffer.txt" />
     <Text Include="fs_framebuffer_kernel.txt" />
     <Text Include="fs_model_loading.txt" />

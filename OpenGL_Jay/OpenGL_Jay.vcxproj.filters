@@ -123,6 +123,9 @@
     <ClCompile Include="AdvancedGLSL.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="advancedGLSL_ubo.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -163,6 +166,9 @@
     <None Include="pointSize.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="uniform_block.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -196,6 +202,18 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="fs_FragCoord.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="8.red.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="8.green.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="8.yellow.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="8.blue.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

@@ -330,6 +330,12 @@ int main()
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
     }
 
+    unsigned int uboExampleBlock;
+    glGenBuffers(1, &uboExampleBlock);
+    glBindBuffer(GL_UNIFORM_BUFFER, uboExampleBlock);
+    glBufferData(GL_UNIFORM_BUFFER, 152, NULL, GL_STATIC_DRAW); // allocate 152 bytes of memory
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
     // load textures
     // -------------
     unsigned int cubeTexture = loadTexture("textures/container.jpg");

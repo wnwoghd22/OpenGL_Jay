@@ -146,7 +146,9 @@
     <ClCompile Include="AdvancedGLSL.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="advancedGLSL_ubo.cpp" />
+    <ClCompile Include="advancedGLSL_ubo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="basic_lighting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -171,6 +173,7 @@
     <ClCompile Include="frame_buffers.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="geometry_shader.cpp" />
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -220,9 +223,12 @@
     <None Include="depth_testing.vs" />
     <None Include="framebuffer.vs" />
     <None Include="lightShader.vs" />
+    <None Include="pass_through.gs" />
     <None Include="pointSize.vs" />
     <None Include="reflection.vs" />
+    <None Include="shader_house.gs" />
     <None Include="shader.vs" />
+    <None Include="simpleVertices.vs" />
     <None Include="skybox.vs" />
     <None Include="uniform_block.vs" />
   </ItemGroup>

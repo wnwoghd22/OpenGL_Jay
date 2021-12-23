@@ -126,6 +126,9 @@
     <ClCompile Include="advancedGLSL_ubo.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="geometry_shader.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -167,6 +170,15 @@
       <Filter>리소스 파일\Shader</Filter>
     </None>
     <None Include="uniform_block.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="simpleVertices.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="shader_house.gs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="pass_through.gs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
   </ItemGroup>

@@ -176,7 +176,10 @@
     <ClCompile Include="geometry_shader.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="geometry_shader_explode.cpp" />
+    <ClCompile Include="geometry_shader_explode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Instancing.cpp" />
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -228,6 +231,7 @@
     <None Include="depth_testing.vs" />
     <None Include="9.2.explode.gs" />
     <None Include="framebuffer.vs" />
+    <None Include="Instancing.vs" />
     <None Include="lightShader.vs" />
     <None Include="pass_through.gs" />
     <None Include="pointSize.vs" />
@@ -255,6 +259,7 @@
     <Text Include="fs_model_loading.txt" />
     <Text Include="fs_reflection.txt" />
     <Text Include="fs_skybox.txt" />
+    <Text Include="Instancing_fs.txt" />
     <Text Include="lightFs.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

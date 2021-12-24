@@ -132,6 +132,9 @@
     <ClCompile Include="geometry_shader_explode.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="Instancing.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -193,6 +196,9 @@
     <None Include="9.3.normal.gs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="Instancing.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -244,6 +250,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="9.3.normal_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="Instancing_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

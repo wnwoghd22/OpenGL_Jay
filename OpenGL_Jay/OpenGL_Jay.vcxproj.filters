@@ -129,6 +129,9 @@
     <ClCompile Include="geometry_shader.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="geometry_shader_explode.cpp">
+      <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -181,6 +184,12 @@
     <None Include="pass_through.gs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="9.geometry_shader.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="9.2.explode.gs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -226,6 +235,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="8.blue.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="9.geometry_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

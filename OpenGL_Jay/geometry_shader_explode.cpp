@@ -73,14 +73,17 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader explodeShader("9.geometry_shader.vs", "9.geometry_fs.txt", "9.2.explode.gs");
+    //Shader explodeShader("9.geometry_shader.vs", "9.geometry_fs.txt", "9.2.explode.gs");
+
+    stbi_set_flip_vertically_on_load(true);
     Model backpack((char*)"backpack/backpack.obj");
 
 
-    /*const char* vsFilePath = "shader.vs";
+    const char* vsFilePath = "shader.vs";
     const char* fsFilePath = "fs_model_loading.txt";
 
-    Shader explodeShader(vsFilePath, fsFilePath);*/
+    Shader shader(vsFilePath, fsFilePath);
+    Shader normalShader("9.geometry_shader.vs","9.3.normal_fs.txt" , "9.3.normal.gs");
 
     // render loop
     // -----------
@@ -105,16 +108,32 @@ int main()
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 1.0f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();;
         glm::mat4 model = glm::mat4(1.0f);
-        explodeShader.use();
-        explodeShader.setMat4("projection", projection);
-        explodeShader.setMat4("view", view);
-        explodeShader.setMat4("model", model);
+        //explodeShader.use();
+        //explodeShader.setMat4("projection", projection);
+        //explodeShader.setMat4("view", view);
+        //explodeShader.setMat4("model", model);
 
-        // add time component to geometry shader in the form of a uniform
-        explodeShader.setFloat("time", glfwGetTime());
+        //// add time component to geometry shader in the form of a uniform
+        //explodeShader.setFloat("time", glfwGetTime());
 
-        // draw model
-        backpack.Draw(explodeShader);
+        //// draw model
+        //backpack.Draw(explodeShader);
+
+        shader.use();
+        shader.setMat4("projection", projection);
+        shader.setMat4("view", view);
+        shader.setMat4("model", model);
+
+        // draw model as usual
+        backpack.Draw(shader);
+
+        // then draw model with normal visualizing geometry shader
+        normalShader.use();
+        normalShader.setMat4("projection", projection);
+        normalShader.setMat4("view", view);
+        normalShader.setMat4("model", model);
+
+        backpack.Draw(normalShader);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------

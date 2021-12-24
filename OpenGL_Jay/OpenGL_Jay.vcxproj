@@ -223,6 +223,7 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_testing.vs" />
     <None Include="9.2.explode.gs" />
@@ -242,6 +243,7 @@
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />
     <Text Include="8.yellow.txt" />
+    <Text Include="9.3.normal_fs.txt" />
     <Text Include="9.geometry_fs.txt" />
     <Text Include="fs.txt" />
     <Text Include="fs_blending.txt" />

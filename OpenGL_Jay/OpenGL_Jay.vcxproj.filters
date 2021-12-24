@@ -190,6 +190,9 @@
     <None Include="9.2.explode.gs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="9.3.normal.gs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -238,6 +241,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="9.geometry_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="9.3.normal_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

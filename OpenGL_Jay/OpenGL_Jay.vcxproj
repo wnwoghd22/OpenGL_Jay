@@ -226,7 +226,6 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="10.asteroid.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_testing.vs" />

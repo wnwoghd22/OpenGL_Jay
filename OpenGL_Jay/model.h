@@ -32,14 +32,11 @@ public:
     }
     void Draw(Shader& shader);
 
-    //cheat
-    vector<Mesh> meshes;
-    vector<Texture> textures_loaded;
 private:
     // model data
-    //vector<Mesh> meshes;
+    vector<Mesh> meshes;
     string directory;
-    //vector<Texture> textures_loaded;
+    vector<Texture> textures_loaded;
 
     void loadModel(string path);
     void processNode(aiNode* node, const aiScene* scene);

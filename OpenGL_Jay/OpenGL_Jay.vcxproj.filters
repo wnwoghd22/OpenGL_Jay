@@ -199,6 +199,9 @@
     <None Include="Instancing.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="10.asteroid.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">

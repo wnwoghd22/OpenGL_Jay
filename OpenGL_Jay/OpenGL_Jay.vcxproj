@@ -232,6 +232,7 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="11.aa_post.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_testing.vs" />
@@ -249,6 +250,7 @@
     <None Include="uniform_block.vs" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="11.aa_post_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />

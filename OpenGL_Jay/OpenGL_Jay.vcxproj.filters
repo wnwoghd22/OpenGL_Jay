@@ -205,6 +205,9 @@
     <None Include="Instancing.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="11.aa_post.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -259,6 +262,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="Instancing_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="11.aa_post_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

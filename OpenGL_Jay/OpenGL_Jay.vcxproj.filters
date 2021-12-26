@@ -46,6 +46,12 @@
     <Filter Include="소스 파일\Chapter\Advanced_OpenGL">
       <UniqueIdentifier>{4758e4aa-2a04-4682-a8a7-af5b4e107ff1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\Advanced_Lighting">
+      <UniqueIdentifier>{53d2f1ea-cd8d-430d-a995-606b46ef9638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader\advanced_lighting">
+      <UniqueIdentifier>{35efc014-e495-4e6a-9090-f1170daf7aac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -141,6 +147,9 @@
     <ClCompile Include="anti_aliasing.cpp">
       <Filter>소스 파일\Chapter\Advanced_OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="blinn_phong.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -208,6 +217,9 @@
     <None Include="11.aa_post.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="1.advanced_lighting.vs">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -266,6 +278,9 @@
     </Text>
     <Text Include="11.aa_post_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="1.advanced_lighting_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </Text>
   </ItemGroup>
 </Project>

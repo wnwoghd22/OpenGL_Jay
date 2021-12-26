@@ -149,13 +149,16 @@
     <ClCompile Include="advancedGLSL_ubo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="anti_aliasing.cpp" />
+    <ClCompile Include="anti_aliasing.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="basic_lighting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="blending.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="blinn_phong.cpp" />
     <ClCompile Include="camera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -232,6 +235,7 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="1.advanced_lighting.vs" />
     <None Include="11.aa_post.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
@@ -250,6 +254,7 @@
     <None Include="uniform_block.vs" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="1.advanced_lighting_fs.txt" />
     <Text Include="11.aa_post_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />

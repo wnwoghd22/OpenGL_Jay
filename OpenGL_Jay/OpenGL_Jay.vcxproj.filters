@@ -159,6 +159,9 @@
     <ClCompile Include="shadow_mapping.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="point_shadows.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -238,6 +241,15 @@
     <None Include="3.1.2.shadow_mapping.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="3.2.1.point_shadows_depth.vs">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </None>
+    <None Include="3.2.1.point_shadows_depth.gs">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </None>
+    <None Include="3.2.1.point_shadows.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -307,6 +319,12 @@
       <Filter>리소스 파일\Shader\Shadow</Filter>
     </Text>
     <Text Include="3.1.2.shadow_mapping_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="3.2.1.point_shadows_depth_fs.txt">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </Text>
+    <Text Include="3.2.1.point_shadows_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

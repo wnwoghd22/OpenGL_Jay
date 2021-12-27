@@ -235,6 +235,9 @@
     <None Include="depth_quad.vs">
       <Filter>리소스 파일\Shader\Shadow</Filter>
     </None>
+    <None Include="3.1.2.shadow_mapping.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -302,6 +305,9 @@
     </Text>
     <Text Include="depth_quad_fs.txt">
       <Filter>리소스 파일\Shader\Shadow</Filter>
+    </Text>
+    <Text Include="3.1.2.shadow_mapping_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>
 </Project>

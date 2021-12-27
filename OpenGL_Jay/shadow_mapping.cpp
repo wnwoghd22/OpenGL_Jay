@@ -84,6 +84,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
+    Shader shader("3.1.2.shadow_mapping.vs", "3.1.2.shadow_mapping_fs.txt");
     Shader simpleDepthShader("simple_depth_shader.vs", "simple_depth_fs.txt");
     Shader depthQuadShader("depth_quad.vs", "depth_quad_fs.txt");
 
@@ -142,6 +143,9 @@ int main()
 
     // shader configuration
     // --------------------
+    shader.use();
+    shader.setInt("diffuseTexture", 0);
+    shader.setInt("shadowMap", 1);
     depthQuadShader.use();
     depthQuadShader.setInt("depthMap", 0);
 
@@ -192,6 +196,25 @@ int main()
         glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        // 2. render scene as normal using the generated depth/shadow map  
+        // --------------------------------------------------------------
+        glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        shader.use();
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+        glm::mat4 view = camera.GetViewMatrix();
+        shader.setMat4("projection", projection);
+        shader.setMat4("view", view);
+        // set light uniforms
+        shader.setVec3("viewPos", camera.Position);
+        shader.setVec3("lightPos", lightPos);
+        shader.setMat4("lightSpaceMatrix", lightSpaceMatrix);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, floorTexture);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, depthMap);
+        renderScene(shader);
+
         // render Depth map to quad for visual debugging
         // ---------------------------------------------
         depthQuadShader.use();
@@ -199,7 +222,7 @@ int main()
         depthQuadShader.setFloat("far_plane", far_plane);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, depthMap);
-        renderQuad();
+        //renderQuad();
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------

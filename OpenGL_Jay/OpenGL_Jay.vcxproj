@@ -245,6 +245,7 @@
     <None Include="11.aa_post.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
+    <None Include="depth_quad.vs" />
     <None Include="depth_testing.vs" />
     <None Include="9.2.explode.gs" />
     <None Include="framebuffer.vs" />
@@ -256,6 +257,7 @@
     <None Include="shader_house.gs" />
     <None Include="shader.vs" />
     <None Include="simpleVertices.vs" />
+    <None Include="simple_depth_shader.vs" />
     <None Include="skybox.vs" />
     <None Include="uniform_block.vs" />
   </ItemGroup>
@@ -268,6 +270,7 @@
     <Text Include="8.yellow.txt" />
     <Text Include="9.3.normal_fs.txt" />
     <Text Include="9.geometry_fs.txt" />
+    <Text Include="depth_quad_fs.txt" />
     <Text Include="fs.txt" />
     <Text Include="fs_blending.txt" />
     <Text Include="fs_border.txt" />
@@ -280,6 +283,7 @@
     <Text Include="fs_skybox.txt" />
     <Text Include="Instancing_fs.txt" />
     <Text Include="lightFs.txt" />
+    <Text Include="simple_depth_fs.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

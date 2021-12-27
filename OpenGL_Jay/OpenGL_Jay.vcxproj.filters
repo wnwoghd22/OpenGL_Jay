@@ -52,6 +52,9 @@
     <Filter Include="리소스 파일\Shader\advanced_lighting">
       <UniqueIdentifier>{35efc014-e495-4e6a-9090-f1170daf7aac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Shader\Shadow">
+      <UniqueIdentifier>{594fc06b-9c7c-4a5e-b0b4-91faf472cdc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -226,6 +229,12 @@
     <None Include="1.advanced_lighting.vs">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </None>
+    <None Include="simple_depth_shader.vs">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </None>
+    <None Include="depth_quad.vs">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -287,6 +296,12 @@
     </Text>
     <Text Include="1.advanced_lighting_fs.txt">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="simple_depth_fs.txt">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
+    </Text>
+    <Text Include="depth_quad_fs.txt">
+      <Filter>리소스 파일\Shader\Shadow</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -153,6 +153,9 @@
     <ClCompile Include="gamma_correction.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="shadow_mapping.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">

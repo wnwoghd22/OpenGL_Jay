@@ -253,6 +253,9 @@
     <None Include="3.2.1.point_shadows.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="4.normal_mapping.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -331,6 +334,9 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="3.3.normal_mapping_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="4.normal_mapping_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

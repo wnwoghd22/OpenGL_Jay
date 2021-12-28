@@ -199,8 +199,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Model_Definition.cpp" />
+    <ClCompile Include="normal_mapping.cpp" />
     <ClCompile Include="point_shadows.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Shader_Constructor.cpp" />
     <ClCompile Include="coordinate.cpp">
@@ -276,6 +277,7 @@
     <Text Include="3.1.2.shadow_mapping_fs.txt" />
     <Text Include="3.2.1.point_shadows_depth_fs.txt" />
     <Text Include="3.2.1.point_shadows_fs.txt" />
+    <Text Include="3.3.normal_mapping_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />

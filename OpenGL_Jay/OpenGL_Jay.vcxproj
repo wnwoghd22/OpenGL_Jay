@@ -199,7 +199,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Model_Definition.cpp" />
-    <ClCompile Include="normal_mapping.cpp" />
+    <ClCompile Include="normal_mapping.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="parallax_mapping.cpp" />
     <ClCompile Include="point_shadows.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -254,6 +257,7 @@
     <None Include="3.2.1.point_shadows_depth.gs" />
     <None Include="3.2.1.point_shadows_depth.vs" />
     <None Include="4.normal_mapping.vs" />
+    <None Include="5.1.parallax_mapping.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_quad.vs" />
@@ -280,6 +284,7 @@
     <Text Include="3.2.1.point_shadows_fs.txt" />
     <Text Include="3.3.normal_mapping_fs.txt" />
     <Text Include="4.normal_mapping_fs.txt" />
+    <Text Include="5.1.parallax_mapping_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />

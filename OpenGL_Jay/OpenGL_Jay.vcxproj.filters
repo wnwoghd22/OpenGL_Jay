@@ -168,6 +168,9 @@
     <ClCompile Include="parallax_mapping.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="HDL.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -262,6 +265,12 @@
     <None Include="5.1.parallax_mapping.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="6.lighting.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="6.hdr.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -347,6 +356,12 @@
     </Text>
     <Text Include="5.1.parallax_mapping_fs.txt">
       <Filter>리소스 파일\Shader\Shadow</Filter>
+    </Text>
+    <Text Include="6.lighting_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="6.hdr_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>
 </Project>

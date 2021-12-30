@@ -188,6 +188,7 @@
     <ClCompile Include="geometry_shader_explode.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="HDL.cpp" />
     <ClCompile Include="Instancing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -202,7 +203,9 @@
     <ClCompile Include="normal_mapping.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="parallax_mapping.cpp" />
+    <ClCompile Include="parallax_mapping.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="point_shadows.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -258,6 +261,8 @@
     <None Include="3.2.1.point_shadows_depth.vs" />
     <None Include="4.normal_mapping.vs" />
     <None Include="5.1.parallax_mapping.vs" />
+    <None Include="6.hdr.vs" />
+    <None Include="6.lighting.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_quad.vs" />
@@ -285,6 +290,8 @@
     <Text Include="3.3.normal_mapping_fs.txt" />
     <Text Include="4.normal_mapping_fs.txt" />
     <Text Include="5.1.parallax_mapping_fs.txt" />
+    <Text Include="6.hdr_fs.txt" />
+    <Text Include="6.lighting_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />

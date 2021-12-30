@@ -82,7 +82,7 @@ int main()
     // build and compile shaders
     // -------------------------
     Shader shader("6.lighting.vs", "6.lighting_fs.txt");
-    Shader hdrShader("6.hdr.vs", "6.hdr_fs.txt");
+    Shader hdrShader("6.hdr.vs", "6.hdr_fs.txt"); //reinhard
 
     // load textures
     // -------------

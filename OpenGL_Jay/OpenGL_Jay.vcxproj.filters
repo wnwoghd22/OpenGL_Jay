@@ -408,5 +408,8 @@
     <Text Include="8.1.deferred_light_box_fs.txt">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </Text>
+    <Text Include="8.2.deferred_shading_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
   </ItemGroup>
 </Project>

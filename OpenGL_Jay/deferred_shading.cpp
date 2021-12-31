@@ -83,7 +83,7 @@ int main()
     // build and compile shaders
     // -------------------------
     Shader shaderGeometryPass("8.1.g_buffer.vs", "8.1.g_buffer_fs.txt");
-    Shader shaderLightingPass("8.1.deferred_shading.vs", "8.1.deferred_shading_fs.txt");
+    Shader shaderLightingPass("8.1.deferred_shading.vs", "8.2.deferred_shading_fs.txt");
     Shader shaderLightBox("8.1.deferred_light_box.vs", "8.1.deferred_light_box_fs.txt");
 
     // load models
@@ -224,10 +224,15 @@ int main()
             shaderLightingPass.setVec3("lights[" + std::to_string(i) + "].Position", lightPositions[i]);
             shaderLightingPass.setVec3("lights[" + std::to_string(i) + "].Color", lightColors[i]);
             // update attenuation parameters and calculate radius
+            const float constant = 1.0; // note that we don't send this to the shader, we assume it is always 1.0 (in our case)
             const float linear = 0.7;
             const float quadratic = 1.8;
             shaderLightingPass.setFloat("lights[" + std::to_string(i) + "].Linear", linear);
             shaderLightingPass.setFloat("lights[" + std::to_string(i) + "].Quadratic", quadratic);
+            // then calculate radius of light volume/sphere
+            const float maxBrightness = std::fmaxf(std::fmaxf(lightColors[i].r, lightColors[i].g), lightColors[i].b);
+            float radius = (-linear + std::sqrt(linear * linear - 4 * quadratic * (constant - (256.0f / 5.0f) * maxBrightness))) / (2.0f * quadratic);
+            shaderLightingPass.setFloat("lights[" + std::to_string(i) + "].Radius", radius);
         }
         shaderLightingPass.setVec3("viewPos", camera.Position);
         // finally render quad

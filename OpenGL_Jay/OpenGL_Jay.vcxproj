@@ -161,7 +161,9 @@
     <ClCompile Include="blinn_phong.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="bloom.cpp" />
+    <ClCompile Include="bloom.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="camera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -171,6 +173,7 @@
     <ClCompile Include="Cubemaps.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="deferred_shading.cpp" />
     <ClCompile Include="depth_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -269,6 +272,9 @@
     <None Include="7.bloom.vs" />
     <None Include="7.bloom_final.vs" />
     <None Include="7.blur.vs" />
+    <None Include="8.1.deferred_light_box.vs" />
+    <None Include="8.1.deferred_shading.vs" />
+    <None Include="8.1.g_buffer.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
     <None Include="depth_quad.vs" />
@@ -302,6 +308,9 @@
     <Text Include="7.bloom_fs.txt" />
     <Text Include="7.blur_fs.txt" />
     <Text Include="7.light_box_fs.txt" />
+    <Text Include="8.1.deferred_light_box_fs.txt" />
+    <Text Include="8.1.deferred_shading_fs.txt" />
+    <Text Include="8.1.g_buffer_fs.txt" />
     <Text Include="8.blue.txt" />
     <Text Include="8.green.txt" />
     <Text Include="8.red.txt" />

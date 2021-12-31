@@ -177,6 +177,9 @@
     <ClCompile Include="deferred_shading.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="SSAO.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -295,6 +298,12 @@
     <None Include="8.1.g_buffer.vs">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </None>
+    <None Include="9.ssao_geometry.vs">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </None>
+    <None Include="9.ssao.vs">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -409,6 +418,18 @@
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </Text>
     <Text Include="8.2.deferred_shading_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="9.ssao_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="9.ssao_blur_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="9.ssao_geometry_fs.txt">
+      <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="9.ssao_lighting_fs.txt">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </Text>
   </ItemGroup>

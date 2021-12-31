@@ -173,7 +173,9 @@
     <ClCompile Include="Cubemaps.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="deferred_shading.cpp" />
+    <ClCompile Include="deferred_shading.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="depth_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -241,6 +243,7 @@
     <ClCompile Include="shadow_mapping.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SSAO.cpp" />
     <ClCompile Include="stencil_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -277,6 +280,8 @@
     <None Include="8.1.g_buffer.vs" />
     <None Include="9.3.normal.gs" />
     <None Include="9.geometry_shader.vs" />
+    <None Include="9.ssao.vs" />
+    <None Include="9.ssao_geometry.vs" />
     <None Include="depth_quad.vs" />
     <None Include="depth_testing.vs" />
     <None Include="9.2.explode.gs" />
@@ -318,6 +323,9 @@
     <Text Include="8.yellow.txt" />
     <Text Include="9.3.normal_fs.txt" />
     <Text Include="9.geometry_fs.txt" />
+    <Text Include="9.ssao_blur_fs.txt" />
+    <Text Include="9.ssao_fs.txt" />
+    <Text Include="9.ssao_lighting_fs.txt" />
     <Text Include="depth_quad_fs.txt" />
     <Text Include="fs.txt" />
     <Text Include="fs_blending.txt" />
@@ -332,6 +340,7 @@
     <Text Include="Instancing_fs.txt" />
     <Text Include="lightFs.txt" />
     <Text Include="simple_depth_fs.txt" />
+    <Text Include="9.ssao_geometry_fs.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

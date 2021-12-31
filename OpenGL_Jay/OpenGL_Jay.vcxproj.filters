@@ -168,7 +168,10 @@
     <ClCompile Include="parallax_mapping.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
-    <ClCompile Include="HDL.cpp">
+    <ClCompile Include="HDR.cpp">
+      <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="bloom.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
   </ItemGroup>
@@ -271,6 +274,15 @@
     <None Include="6.hdr.vs">
       <Filter>리소스 파일\Shader</Filter>
     </None>
+    <None Include="7.bloom.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="7.blur.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="7.bloom_final.vs">
+      <Filter>리소스 파일\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -361,6 +373,18 @@
       <Filter>리소스 파일\Shader</Filter>
     </Text>
     <Text Include="6.hdr_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="7.bloom_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="7.light_box_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="7.blur_fs.txt">
+      <Filter>리소스 파일\Shader</Filter>
+    </Text>
+    <Text Include="7.bloom_final_fs.txt">
       <Filter>리소스 파일\Shader</Filter>
     </Text>
   </ItemGroup>

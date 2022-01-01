@@ -55,6 +55,12 @@
     <Filter Include="리소스 파일\Shader\Shadow">
       <UniqueIdentifier>{594fc06b-9c7c-4a5e-b0b4-91faf472cdc6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\PBR">
+      <UniqueIdentifier>{95335d7c-8476-43f0-8fa2-b6f2371c4d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader\PBR">
+      <UniqueIdentifier>{1f08568a-00f2-4b8b-ab54-168ff952bd5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -180,6 +186,9 @@
     <ClCompile Include="SSAO.cpp">
       <Filter>소스 파일\Chapter\Advanced_Lighting</Filter>
     </ClCompile>
+    <ClCompile Include="lighting.cpp">
+      <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -303,6 +312,9 @@
     </None>
     <None Include="9.ssao.vs">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </None>
+    <None Include="1.1.pbr.vs">
+      <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -431,6 +443,9 @@
     </Text>
     <Text Include="9.ssao_lighting_fs.txt">
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
+    </Text>
+    <Text Include="1.1.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>
 </Project>

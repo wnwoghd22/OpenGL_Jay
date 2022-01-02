@@ -203,7 +203,10 @@
     <ClCompile Include="instancing_asteroid.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="lighting.cpp" />
+    <ClCompile Include="lighting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="lighting_textured.cpp" />
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -304,6 +307,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="1.1.pbr_fs.txt" />
+    <Text Include="1.2.pbr_fs.txt" />
     <Text Include="1.advanced_lighting_fs.txt" />
     <Text Include="11.aa_post_fs.txt" />
     <Text Include="3.1.2.shadow_mapping_fs.txt" />

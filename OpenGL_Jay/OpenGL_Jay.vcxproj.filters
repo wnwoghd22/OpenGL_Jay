@@ -189,6 +189,9 @@
     <ClCompile Include="lighting.cpp">
       <Filter>소스 파일\Chapter\PBR</Filter>
     </ClCompile>
+    <ClCompile Include="lighting_textured.cpp">
+      <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -445,6 +448,9 @@
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </Text>
     <Text Include="1.1.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="1.2.pbr_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>

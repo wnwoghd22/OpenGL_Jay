@@ -192,6 +192,9 @@
     <ClCompile Include="lighting_textured.cpp">
       <Filter>소스 파일\Chapter\PBR</Filter>
     </ClCompile>
+    <ClCompile Include="diffuse_irradiance.cpp">
+      <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -317,6 +320,15 @@
       <Filter>리소스 파일\Shader\advanced_lighting</Filter>
     </None>
     <None Include="1.1.pbr.vs">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </None>
+    <None Include="2.1.1.pbr.vs">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </None>
+    <None Include="2.1.1.cubemap.vs">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </None>
+    <None Include="2.1.1.background.vs">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
   </ItemGroup>
@@ -451,6 +463,15 @@
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
     <Text Include="1.2.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.1.1.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.1.1.equirectangular_to_cubemap_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.1.1.background_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>

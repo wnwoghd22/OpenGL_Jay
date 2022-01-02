@@ -179,6 +179,7 @@
     <ClCompile Include="depth_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="diffuse_irradiance.cpp" />
     <ClCompile Include="face_culling.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -206,7 +207,9 @@
     <ClCompile Include="lighting.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="lighting_textured.cpp" />
+    <ClCompile Include="lighting_textured.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Mesh_Definition.cpp" />
     <ClCompile Include="Model.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -271,6 +274,9 @@
     <None Include="1.1.pbr.vs" />
     <None Include="1.advanced_lighting.vs" />
     <None Include="11.aa_post.vs" />
+    <None Include="2.1.1.background.vs" />
+    <None Include="2.1.1.cubemap.vs" />
+    <None Include="2.1.1.pbr.vs" />
     <None Include="3.1.2.shadow_mapping.vs" />
     <None Include="3.2.1.point_shadows.vs" />
     <None Include="3.2.1.point_shadows_depth.gs" />
@@ -310,6 +316,9 @@
     <Text Include="1.2.pbr_fs.txt" />
     <Text Include="1.advanced_lighting_fs.txt" />
     <Text Include="11.aa_post_fs.txt" />
+    <Text Include="2.1.1.background_fs.txt" />
+    <Text Include="2.1.1.equirectangular_to_cubemap_fs.txt" />
+    <Text Include="2.1.1.pbr_fs.txt" />
     <Text Include="3.1.2.shadow_mapping_fs.txt" />
     <Text Include="3.2.1.point_shadows_depth_fs.txt" />
     <Text Include="3.2.1.point_shadows_fs.txt" />

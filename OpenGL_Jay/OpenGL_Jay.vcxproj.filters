@@ -195,6 +195,9 @@
     <ClCompile Include="diffuse_irradiance.cpp">
       <Filter>소스 파일\Chapter\PBR</Filter>
     </ClCompile>
+    <ClCompile Include="ibl_irradiance.cpp">
+      <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -472,6 +475,12 @@
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
     <Text Include="2.1.1.background_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.1.2.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.1.2.irradiance_convolution_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>

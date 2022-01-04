@@ -198,6 +198,9 @@
     <ClCompile Include="ibl_irradiance.cpp">
       <Filter>소스 파일\Chapter\PBR</Filter>
     </ClCompile>
+    <ClCompile Include="specular_IBL.cpp">
+      <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -332,6 +335,9 @@
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
     <None Include="2.1.1.background.vs">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </None>
+    <None Include="2.2.1.cubemap.vs">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
   </ItemGroup>
@@ -481,6 +487,12 @@
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
     <Text Include="2.1.2.irradiance_convolution_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.2.1.pre_filter_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.2.1.pbr_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>

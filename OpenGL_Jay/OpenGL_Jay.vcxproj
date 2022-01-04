@@ -200,7 +200,9 @@
     <ClCompile Include="HDR.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ibl_irradiance.cpp" />
+    <ClCompile Include="ibl_irradiance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Instancing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -253,6 +255,7 @@
     <ClCompile Include="shadow_mapping.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="specular_IBL.cpp" />
     <ClCompile Include="SSAO.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -280,6 +283,7 @@
     <None Include="2.1.1.background.vs" />
     <None Include="2.1.1.cubemap.vs" />
     <None Include="2.1.1.pbr.vs" />
+    <None Include="2.2.1.cubemap.vs" />
     <None Include="3.1.2.shadow_mapping.vs" />
     <None Include="3.2.1.point_shadows.vs" />
     <None Include="3.2.1.point_shadows_depth.gs" />
@@ -324,10 +328,12 @@
     <Text Include="2.1.1.pbr_fs.txt" />
     <Text Include="2.1.2.irradiance_convolution_fs.txt" />
     <Text Include="2.1.2.pbr_fs.txt" />
+    <Text Include="2.2.1.pbr_fs.txt" />
     <Text Include="3.1.2.shadow_mapping_fs.txt" />
     <Text Include="3.2.1.point_shadows_depth_fs.txt" />
     <Text Include="3.2.1.point_shadows_fs.txt" />
     <Text Include="3.3.normal_mapping_fs.txt" />
+    <Text Include="2.2.1.pre_filter_fs.txt" />
     <Text Include="4.normal_mapping_fs.txt" />
     <Text Include="5.1.parallax_mapping_fs.txt" />
     <Text Include="6.hdr_fs.txt" />

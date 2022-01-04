@@ -85,13 +85,13 @@ int main()
     Shader pbrShader("2.1.1.pbr.vs", "2.2.1.pbr_fs.txt");
     Shader equirectangularToCubemapShader("2.1.1.cubemap.vs", "2.1.1.equirectangular_to_cubemap_fs.txt");
     Shader irradianceShader("2.1.1.cubemap.vs", "2.1.2.irradiance_convolution_fs.txt");
-    Shader backgroundShader("2.1.1.background.vs", "2.1.1.background_fs.txt");
     Shader prefilterShader("2.1.1.cubemap.vs", "2.2.1.pre_filter_fs.txt");
     Shader brdfShader("2.2.1.brdf.vs", "2.2.1.brdf_fs.txt");
-
+    Shader backgroundShader("2.1.1.background.vs", "2.1.1.background_fs.txt");
+    
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);
-    pbrShader.setInt("prefilter", 1);
+    pbrShader.setInt("prefilterMap", 1);
     pbrShader.setInt("brdfLUT", 2);
     pbrShader.setVec3("albedo", 0.5f, 0.0f, 0.0f);
     pbrShader.setFloat("ao", 1.0f);
@@ -166,7 +166,7 @@ int main()
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); // enable pre-filter mipmap sampling (combatting visible dots artifact)
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     // pbr: set up projection and view matrices for capturing data onto the 6 cubemap face directions

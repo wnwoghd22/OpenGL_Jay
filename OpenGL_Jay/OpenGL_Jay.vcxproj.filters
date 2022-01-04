@@ -337,7 +337,7 @@
     <None Include="2.1.1.background.vs">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
-    <None Include="2.2.1.cubemap.vs">
+    <None Include="2.2.1.brdf.vs">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
   </ItemGroup>
@@ -493,6 +493,9 @@
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
     <Text Include="2.2.1.pbr_fs.txt">
+      <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="2.2.1.brdf_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </Text>
   </ItemGroup>

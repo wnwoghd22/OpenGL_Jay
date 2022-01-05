@@ -207,6 +207,9 @@
     <ClCompile Include="debugging.cpp">
       <Filter>소스 파일\Chapter\In_Practice</Filter>
     </ClCompile>
+    <ClCompile Include="text_rendering.cpp">
+      <Filter>소스 파일\Chapter\In_Practice</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">

@@ -61,6 +61,9 @@
     <Filter Include="리소스 파일\Shader\PBR">
       <UniqueIdentifier>{1f08568a-00f2-4b8b-ab54-168ff952bd5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Chapter\In_Practice">
+      <UniqueIdentifier>{178e45d2-e380-40c7-9aca-8c5576f48e73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -200,6 +203,9 @@
     </ClCompile>
     <ClCompile Include="specular_IBL.cpp">
       <Filter>소스 파일\Chapter\PBR</Filter>
+    </ClCompile>
+    <ClCompile Include="debugging.cpp">
+      <Filter>소스 파일\Chapter\In_Practice</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

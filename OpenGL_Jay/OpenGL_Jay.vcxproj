@@ -270,7 +270,9 @@
     <ClCompile Include="texture.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="text_rendering.cpp" />
+    <ClCompile Include="text_rendering.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="transformations.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -322,6 +324,7 @@
     <None Include="simpleVertices.vs" />
     <None Include="simple_depth_shader.vs" />
     <None Include="skybox.vs" />
+    <None Include="text.vs" />
     <None Include="uniform_block.vs" />
   </ItemGroup>
   <ItemGroup>
@@ -377,6 +380,7 @@
     <Text Include="lightFs.txt" />
     <Text Include="simple_depth_fs.txt" />
     <Text Include="9.ssao_geometry_fs.txt" />
+    <Text Include="text_fs.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

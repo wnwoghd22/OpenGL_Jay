@@ -64,6 +64,9 @@
     <Filter Include="소스 파일\Chapter\In_Practice">
       <UniqueIdentifier>{178e45d2-e380-40c7-9aca-8c5576f48e73}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Shader\text_shader">
+      <UniqueIdentifier>{629eba36-f139-43b2-a1c6-9ea958361984}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c">
@@ -349,6 +352,9 @@
     <None Include="2.2.1.brdf.vs">
       <Filter>리소스 파일\Shader\PBR</Filter>
     </None>
+    <None Include="text.vs">
+      <Filter>리소스 파일\Shader\text_shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fs.txt">
@@ -506,6 +512,9 @@
     </Text>
     <Text Include="2.2.1.brdf_fs.txt">
       <Filter>리소스 파일\Shader\PBR</Filter>
+    </Text>
+    <Text Include="text_fs.txt">
+      <Filter>리소스 파일\Shader\text_shader</Filter>
     </Text>
   </ItemGroup>
 </Project>
